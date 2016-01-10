@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A84E79271C420DE000088E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E79261C420DE000088E95 /* AppDelegate.swift */; };
+		A84E79291C420DE000088E95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E79281C420DE000088E95 /* ViewController.swift */; };
+		A84E792B1C420DE000088E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84E792A1C420DE000088E95 /* Assets.xcassets */; };
+		A84E792E1C420DE000088E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84E792C1C420DE000088E95 /* Main.storyboard */; };
+		A84E79391C420DE000088E95 /* PhonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E79381C420DE000088E95 /* PhonerTests.swift */; };
+		A84E79441C420DE000088E95 /* PhonerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E79431C420DE000088E95 /* PhonerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A84E79351C420DE000088E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A84E791B1C420DE000088E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A84E79221C420DE000088E95;
+			remoteInfo = Phoner;
+		};
+		A84E79401C420DE000088E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A84E791B1C420DE000088E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A84E79221C420DE000088E95;
+			remoteInfo = Phoner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A84E79231C420DE000088E95 /* Phoner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phoner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84E79261C420DE000088E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A84E79281C420DE000088E95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A84E792A1C420DE000088E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A84E792D1C420DE000088E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A84E792F1C420DE000088E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84E79341C420DE000088E95 /* PhonerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84E79381C420DE000088E95 /* PhonerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonerTests.swift; sourceTree = "<group>"; };
+		A84E793A1C420DE000088E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84E793F1C420DE000088E95 /* PhonerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84E79431C420DE000088E95 /* PhonerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonerUITests.swift; sourceTree = "<group>"; };
+		A84E79451C420DE000088E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A84E79201C420DE000088E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84E79311C420DE000088E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84E793C1C420DE000088E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A84E791A1C420DE000088E95 = {
+			isa = PBXGroup;
+			children = (
+				A84E79251C420DE000088E95 /* Phoner */,
+				A84E79371C420DE000088E95 /* PhonerTests */,
+				A84E79421C420DE000088E95 /* PhonerUITests */,
+				A84E79241C420DE000088E95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A84E79241C420DE000088E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A84E79231C420DE000088E95 /* Phoner.app */,
+				A84E79341C420DE000088E95 /* PhonerTests.xctest */,
+				A84E793F1C420DE000088E95 /* PhonerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A84E79251C420DE000088E95 /* Phoner */ = {
+			isa = PBXGroup;
+			children = (
+				A84E79261C420DE000088E95 /* AppDelegate.swift */,
+				A84E79281C420DE000088E95 /* ViewController.swift */,
+				A84E792A1C420DE000088E95 /* Assets.xcassets */,
+				A84E792C1C420DE000088E95 /* Main.storyboard */,
+				A84E792F1C420DE000088E95 /* Info.plist */,
+			);
+			path = Phoner;
+			sourceTree = "<group>";
+		};
+		A84E79371C420DE000088E95 /* PhonerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A84E79381C420DE000088E95 /* PhonerTests.swift */,
+				A84E793A1C420DE000088E95 /* Info.plist */,
+			);
+			path = PhonerTests;
+			sourceTree = "<group>";
+		};
+		A84E79421C420DE000088E95 /* PhonerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A84E79431C420DE000088E95 /* PhonerUITests.swift */,
+				A84E79451C420DE000088E95 /* Info.plist */,
+			);
+			path = PhonerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A84E79221C420DE000088E95 /* Phoner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84E79481C420DE000088E95 /* Build configuration list for PBXNativeTarget "Phoner" */;
+			buildPhases = (
+				A84E791F1C420DE000088E95 /* Sources */,
+				A84E79201C420DE000088E95 /* Frameworks */,
+				A84E79211C420DE000088E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Phoner;
+			productName = Phoner;
+			productReference = A84E79231C420DE000088E95 /* Phoner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A84E79331C420DE000088E95 /* PhonerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84E794B1C420DE000088E95 /* Build configuration list for PBXNativeTarget "PhonerTests" */;
+			buildPhases = (
+				A84E79301C420DE000088E95 /* Sources */,
+				A84E79311C420DE000088E95 /* Frameworks */,
+				A84E79321C420DE000088E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A84E79361C420DE000088E95 /* PBXTargetDependency */,
+			);
+			name = PhonerTests;
+			productName = PhonerTests;
+			productReference = A84E79341C420DE000088E95 /* PhonerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A84E793E1C420DE000088E95 /* PhonerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84E794E1C420DE000088E95 /* Build configuration list for PBXNativeTarget "PhonerUITests" */;
+			buildPhases = (
+				A84E793B1C420DE000088E95 /* Sources */,
+				A84E793C1C420DE000088E95 /* Frameworks */,
+				A84E793D1C420DE000088E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A84E79411C420DE000088E95 /* PBXTargetDependency */,
+			);
+			name = PhonerUITests;
+			productName = PhonerUITests;
+			productReference = A84E793F1C420DE000088E95 /* PhonerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A84E791B1C420DE000088E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Omar De La Hoz";
+				TargetAttributes = {
+					A84E79221C420DE000088E95 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					A84E79331C420DE000088E95 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A84E79221C420DE000088E95;
+					};
+					A84E793E1C420DE000088E95 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = A84E79221C420DE000088E95;
+					};
+				};
+			};
+			buildConfigurationList = A84E791E1C420DE000088E95 /* Build configuration list for PBXProject "Phoner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A84E791A1C420DE000088E95;
+			productRefGroup = A84E79241C420DE000088E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A84E79221C420DE000088E95 /* Phoner */,
+				A84E79331C420DE000088E95 /* PhonerTests */,
+				A84E793E1C420DE000088E95 /* PhonerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A84E79211C420DE000088E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84E792B1C420DE000088E95 /* Assets.xcassets in Resources */,
+				A84E792E1C420DE000088E95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84E79321C420DE000088E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84E793D1C420DE000088E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A84E791F1C420DE000088E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84E79291C420DE000088E95 /* ViewController.swift in Sources */,
+				A84E79271C420DE000088E95 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84E79301C420DE000088E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84E79391C420DE000088E95 /* PhonerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84E793B1C420DE000088E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84E79441C420DE000088E95 /* PhonerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A84E79361C420DE000088E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A84E79221C420DE000088E95 /* Phoner */;
+			targetProxy = A84E79351C420DE000088E95 /* PBXContainerItemProxy */;
+		};
+		A84E79411C420DE000088E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A84E79221C420DE000088E95 /* Phoner */;
+			targetProxy = A84E79401C420DE000088E95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A84E792C1C420DE000088E95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A84E792D1C420DE000088E95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A84E79461C420DE000088E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A84E79471C420DE000088E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A84E79491C420DE000088E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Phoner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlhz.Phoner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A84E794A1C420DE000088E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Phoner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlhz.Phoner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A84E794C1C420DE000088E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PhonerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlhz.PhonerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phoner.app/Contents/MacOS/Phoner";
+			};
+			name = Debug;
+		};
+		A84E794D1C420DE000088E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PhonerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlhz.PhonerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phoner.app/Contents/MacOS/Phoner";
+			};
+			name = Release;
+		};
+		A84E794F1C420DE000088E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PhonerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlhz.PhonerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Phoner;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A84E79501C420DE000088E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PhonerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlhz.PhonerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Phoner;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A84E791E1C420DE000088E95 /* Build configuration list for PBXProject "Phoner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84E79461C420DE000088E95 /* Debug */,
+				A84E79471C420DE000088E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A84E79481C420DE000088E95 /* Build configuration list for PBXNativeTarget "Phoner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84E79491C420DE000088E95 /* Debug */,
+				A84E794A1C420DE000088E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A84E794B1C420DE000088E95 /* Build configuration list for PBXNativeTarget "PhonerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84E794C1C420DE000088E95 /* Debug */,
+				A84E794D1C420DE000088E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A84E794E1C420DE000088E95 /* Build configuration list for PBXNativeTarget "PhonerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84E794F1C420DE000088E95 /* Debug */,
+				A84E79501C420DE000088E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A84E791B1C420DE000088E95 /* Project object */;
+}
