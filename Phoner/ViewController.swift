@@ -11,16 +11,15 @@ import Foundation
 import MultipeerConnectivity
 import AVFoundation
 
-class ViewController: NSViewController, MCSessionDelegate, MCNearbyServiceAdvertiserDelegate{
+class ViewController: NSViewController, MCSessionDelegate, MCNearbyServiceBrowserDelegate{
     
     var peerID: MCPeerID!
     var mcSession: MCSession!
-    var mcAdvertiserAssistant: MCAdvertiserAssistant!
     var audioEngine: AVAudioEngine!
     var audioInputNode : AVAudioInputNode!
     var audioPlayerNode: AVAudioPlayerNode!
     var audioBuffer: AVAudioPCMBuffer!
-    var serviceAdvertiser : MCNearbyServiceAdvertiser!
+    var serviceBrowser : MCNearbyServiceBrowser!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +28,11 @@ class ViewController: NSViewController, MCSessionDelegate, MCNearbyServiceAdvert
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .Required)
         mcSession.delegate = self
         
-        self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: "phoner")
+        self.serviceBrowser = MCNearbyServiceBrowser(peer: peerID, serviceType: "phoner")
+        self.serviceBrowser.delegate = self
+        self.serviceBrowser.startBrowsingForPeers()
         
-        self.serviceAdvertiser.delegate = self
-        self.serviceAdvertiser.startAdvertisingPeer()
         
-        
-
         // Do any additional setup after loading the view.
     }
 
@@ -63,7 +60,9 @@ class ViewController: NSViewController, MCSessionDelegate, MCNearbyServiceAdvert
     
     func session(session: MCSession, peer peerID: MCPeerID, didChangeState state: MCSessionState) {
         
-        return
+        print("\(peerID.displayName) changed state: \(state.toString())")
+
+        
     }
     
     func session(session: MCSession, didReceiveData data: NSData, fromPeer peerID: MCPeerID) {
@@ -71,16 +70,31 @@ class ViewController: NSViewController, MCSessionDelegate, MCNearbyServiceAdvert
         return
     }
     
-    func advertiser(advertiser: MCNearbyServiceAdvertiser, didNotStartAdvertisingPeer error: NSError) {
+    func browser(browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
         
+        browser.invitePeer(peerID, toSession: self.mcSession, withContext: nil, timeout: 10)
+    }
+    
+    func browser(browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: NSError) {
         return
     }
     
-    func advertiser(advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: NSData?, invitationHandler: (Bool, MCSession) -> Void) {
-        
+    func browser(browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
         return
     }
-
+    
 
 }
+
+extension MCSessionState {
+    func toString() -> String {
+        switch self {
+        case .Connected:    return "Connected"
+        case .Connecting:   return "Connecting"
+        case .NotConnected: return "Not Connected"
+        }
+    }
+}
+
+
 
