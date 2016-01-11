@@ -9,12 +9,18 @@
 import Cocoa
 import Foundation
 import MultipeerConnectivity
+import AVFoundation
 
-class ViewController: NSViewController, MCSessionDelegate {
+class ViewController: NSViewController, MCSessionDelegate, MCNearbyServiceAdvertiserDelegate{
     
     var peerID: MCPeerID!
     var mcSession: MCSession!
     var mcAdvertiserAssistant: MCAdvertiserAssistant!
+    var audioEngine: AVAudioEngine!
+    var audioInputNode : AVAudioInputNode!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var audioBuffer: AVAudioPCMBuffer!
+    var serviceAdvertiser : MCNearbyServiceAdvertiser!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +29,12 @@ class ViewController: NSViewController, MCSessionDelegate {
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .Required)
         mcSession.delegate = self
         
-        mcAdvertiserAssistant = MCAdvertiserAssistant(serviceType: "hws-kb", discoveryInfo: nil, session: mcSession)
-        mcAdvertiserAssistant.start()
+        self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: peerID, discoveryInfo: nil, serviceType: "phoner")
+        
+        self.serviceAdvertiser.delegate = self
+        self.serviceAdvertiser.startAdvertisingPeer()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -57,6 +67,16 @@ class ViewController: NSViewController, MCSessionDelegate {
     }
     
     func session(session: MCSession, didReceiveData data: NSData, fromPeer peerID: MCPeerID) {
+        
+        return
+    }
+    
+    func advertiser(advertiser: MCNearbyServiceAdvertiser, didNotStartAdvertisingPeer error: NSError) {
+        
+        return
+    }
+    
+    func advertiser(advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: NSData?, invitationHandler: (Bool, MCSession) -> Void) {
         
         return
     }
